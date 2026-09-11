@@ -1,0 +1,1 @@
+A hospital appointment booking platform that allows patients to browse doctors, check availability, and book appointments through a simple and user-friendly interface. Built as an IP (Industry Project) for streamlining hospital appointment management.
