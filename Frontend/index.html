@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Max Care Hospital</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- YOUR CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     AUTHENTICATION SCREEN
+========================================================= -->
+
+<div id="authScreen" class="auth-screen">
+
+    <!-- LEFT BRANDING PANEL -->
+    <section class="auth-brand-panel">
+
+        <div class="brand-glow glow-one"></div>
+        <div class="brand-glow glow-two"></div>
+
+        <div class="brand-content">
+
+            <div class="hospital-brand">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <div>
+                    <h1>MAX CARE</h1>
+                    <span>HOSPITAL</span>
+                </div>
+            </div>
+
+            <div class="brand-heading">
+                <span class="eyebrow">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    Advanced Healthcare Network
+                </span>
+
+                <h2>
+                    Excellence in Clinical Care
+                    <span>& Compassionate Healing.</span>
+                </h2>
+
+                <p>
+                    Super Specialty Clinical & Surgical Institute delivering
+                    trusted healthcare through technology, expertise and
+                    compassionate patient care.
+                </p>
+            </div>
+
+            <div class="accreditation-badge">
+                <div class="accreditation-icon">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+
+                <div>
+                    <strong>NABH & JCI Gold Seal</strong>
+                    <span>Accredited Center</span>
+                </div>
+
+                <i class="fa-solid fa-circle-check verified-icon"></i>
+            </div>
+
+            <!-- STATS -->
+            <div class="brand-stats">
+
+                <div class="stat-item">
+                    <strong>450+</strong>
+                    <span>Top Specialists</span>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat-item">
+                    <strong>99.2%</strong>
+                    <span>Patient Trust</span>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat-item">
+                    <strong>24/7</strong>
+                    <span>Emergency OPD</span>
+                </div>
+
+            </div>
+
+            <!-- LIVE OPD CARD -->
+            <div class="opd-live-card">
+
+                <div class="live-indicator">
+                    <span></span>
+                    LIVE
+                </div>
+
+                <div class="opd-info">
+                    <div class="opd-icon">
+                        <i class="fa-solid fa-hospital"></i>
+                    </div>
+
+                    <div>
+                        <strong>OPD in Session</strong>
+                        <p>Multiple specialists available now</p>
+                    </div>
+                </div>
+
+                <div class="opd-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="brand-footer">
+            <span>
+                <i class="fa-solid fa-lock"></i>
+                HIPAA-inspired secure infrastructure
+            </span>
+
+            <span>© 2026 Max Care Hospital</span>
+        </div>
+
+    </section>
+
+
+    <!-- RIGHT LOGIN PANEL -->
+    <section class="auth-login-panel">
+
+        <div class="login-container">
+
+            <div class="mobile-brand">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <div>
+                    <strong>MAX CARE</strong>
+                    <span>HOSPITAL</span>
+                </div>
+            </div>
+
+            <div class="login-header">
+
+                <span class="login-eyebrow">
+                    SECURE PATIENT ACCESS
+                </span>
+
+                <h2>Sign in to your portal</h2>
+
+                <p>
+                    Access appointments, medical records and personalized
+                    healthcare services.
+                </p>
+
+            </div>
+
+
+            <!-- ROLE TABS -->
+            <div class="role-tabs" id="roleTabs">
+
+                <button
+                    class="role-tab active"
+                    data-role="patient"
+                    type="button"
+                >
+                    <i class="fa-solid fa-user"></i>
+                    Patient
+                </button>
+
+                <button
+                    class="role-tab"
+                    data-role="doctor"
+                    type="button"
+                >
+                    <i class="fa-solid fa-user-doctor"></i>
+                    Doctor
+                </button>
+
+                <button
+                    class="role-tab"
+                    data-role="admin"
+                    type="button"
+                >
+                    <i class="fa-solid fa-user-shield"></i>
+                    Admin
+                </button>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm" class="login-form">
+
+                <div class="form-group">
+
+                    <label id="identifierLabel" for="identifier">
+                        Email / UHID
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-regular fa-user input-icon"></i>
+
+                        <input
+                            type="text"
+                            id="identifier"
+                            placeholder="Enter your email or UHID"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-lock input-icon"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                            aria-label="Show password"
+                        >
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-options">
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+
+                        <span class="custom-checkbox"></span>
+
+                        <span>Keep me signed in</span>
+
+                    </label>
+
+                    <button
+                        type="button"
+                        class="forgot-btn"
+                    >
+                        Forgot password?
+                    </button>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn login-btn"
+                    id="loginButton"
+                >
+                    <span>Sign In to Patient Portal</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+
+            <!-- DEMO PROFILES -->
+            <div class="demo-section">
+
+                <div class="demo-divider">
+                    <span>1-CLICK DEMO PROFILES</span>
+                </div>
+
+                <div class="demo-profiles">
+
+                    <button
+                        type="button"
+                        class="demo-profile"
+                        data-demo="patient"
+                    >
+                        <div class="demo-avatar patient-avatar">
+                            AV
+                        </div>
+
+                        <div class="demo-details">
+                            <strong>Aarav Verma</strong>
+                            <span>Patient Demo</span>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="demo-profile"
+                        data-demo="doctor"
+                    >
+                        <div class="demo-avatar doctor-avatar">
+                            RS
+                        </div>
+
+                        <div class="demo-details">
+                            <strong>Dr. Rahul Sharma</strong>
+                            <span>Doctor Demo</span>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="demo-profile"
+                        data-demo="admin"
+                    >
+                        <div class="demo-avatar admin-avatar">
+                            AD
+                        </div>
+
+                        <div class="demo-details">
+                            <strong>Hospital Admin</strong>
+                            <span>Admin Demo</span>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="login-security">
+
+                <span>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Secure encrypted connection
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Verified healthcare portal
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- =========================================================
+     MAIN DASHBOARD APPLICATION
+========================================================= -->
+
+<div id="appShell" class="app-shell hidden">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-top">
+
+            <!-- LOGO -->
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <div>
+                    <strong>MAX CARE</strong>
+                    <span>HOSPITAL</span>
+                </div>
+
+            </div>
+
+
+            <!-- PORTAL STATUS -->
+            <div class="portal-status">
+
+                <div class="status-dot"></div>
+
+                <div>
+                    <span>ACTIVE ENVIRONMENT</span>
+                    <strong id="sidebarPortalName">
+                        Patient Portal
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+            <nav class="sidebar-nav">
+
+                <span class="nav-label">MAIN MENU</span>
+
+                <button
+                    class="nav-item active"
+                    data-view="dashboard"
+                >
+                    <i class="fa-solid fa-grid-2"></i>
+                    <span>My Dashboard</span>
+                </button>
+
+                <button
+                    class="nav-item"
+                    data-action="book"
+                >
+                    <i class="fa-solid fa-calendar-plus"></i>
+                    <span>Book Appointment</span>
+                </button>
+
+                <button
+                    class="nav-item"
+                    data-view="doctors"
+                >
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <span>Available Doctors</span>
+                </button>
+
+                <button
+                    class="nav-item"
+                    data-view="history"
+                >
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Appointment History</span>
+                </button>
+
+                <button
+                    class="nav-item"
+                    data-view="records"
+                >
+                    <i class="fa-solid fa-file-medical"></i>
+                    <span>Prescriptions & Records</span>
+                </button>
+
+            </nav>
+
+        </div>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <button
+                class="sidebar-book-btn"
+                data-action="book"
+            >
+                <span>
+                    <i class="fa-solid fa-plus"></i>
+                    Book Appointment
+                </span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar" id="sidebarAvatar">
+                    AV
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong id="sidebarUserName">
+                        Aarav Verma
+                    </strong>
+
+                    <span id="sidebarUserRole">
+                        Verified Patient
+                    </span>
+                </div>
+
+                <button
+                    class="logout-btn"
+                    id="logoutButton"
+                    title="Sign out"
+                >
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+
+        <!-- TOP HEADER -->
+        <header class="top-header">
+
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+
+            <!-- SEARCH -->
+            <div class="global-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="search"
+                    placeholder="Search doctors, specialties, or departments..."
+                    id="globalSearch"
+                >
+
+                <kbd>⌘ K</kbd>
+
+            </div>
+
+
+            <!-- HEADER ACTIONS -->
+            <div class="header-actions">
+
+                <div class="header-date">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Saturday, 12 Sep 2026</span>
+                </div>
+
+
+                <div class="header-divider"></div>
+
+
+                <!-- ROLE DROPDOWN -->
+                <div class="role-dropdown-wrapper">
+
+                    <button
+                        class="role-dropdown"
+                        id="roleDropdown"
+                    >
+                        <span id="headerRole">
+                            Patient Portal
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div
+                        class="role-dropdown-menu"
+                        id="roleDropdownMenu"
+                    >
+                        <button data-switch-role="patient">
+                            <i class="fa-solid fa-user"></i>
+                            Patient Portal
+                        </button>
+
+                        <button data-switch-role="doctor">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            Doctor Portal
+                        </button>
+
+                        <button data-switch-role="admin">
+                            <i class="fa-solid fa-user-shield"></i>
+                            Admin Portal
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <!-- NOTIFICATION -->
+                <button
+                    class="notification-btn"
+                    id="notificationBtn"
+                    title="Notifications"
+                >
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-count">3</span>
+                </button>
+
+
+                <!-- USER PROFILE -->
+                <button class="header-profile">
+
+                    <div class="header-avatar" id="headerAvatar">
+                        AV
+                    </div>
+
+                    <div class="header-user-info">
+
+                        <strong id="headerUserName">
+                            Aarav Verma
+                        </strong>
+
+                        <span id="headerUserStatus">
+                            Verified Patient
+                        </span>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <div class="page-container">
+
+            <!-- =============================================
+                 PATIENT DASHBOARD
+            ============================================== -->
+
+            <section
+                id="dashboardView"
+                class="dashboard-view page-view active-view"
+            >
+
+                <!-- WELCOME -->
+                <div class="welcome-section">
+
+                    <div>
+
+                        <div class="welcome-label">
+                            <span class="welcome-dot"></span>
+                            PATIENT OVERVIEW
+                        </div>
+
+                        <h1>
+                            Good morning,
+                            <span id="welcomeName">Aarav</span>
+                        </h1>
+
+                        <p>
+                            Here's your health overview and upcoming
+                            appointments at Max Care Hospital.
+                        </p>
+
+                    </div>
+
+                    <div class="uhid-badge">
+                        <span>UHID</span>
+                        <strong id="uhidValue">MC-2026-8941</strong>
+                        <i class="fa-solid fa-copy"></i>
+                    </div>
+
+                </div>
+
+
+                <!-- UPCOMING APPOINTMENT -->
+                <div class="appointment-hero">
+
+                    <div class="appointment-pattern"></div>
+
+                    <div class="appointment-main">
+
+                        <div class="appointment-top">
+
+                            <div class="section-eyebrow">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                NEXT APPOINTMENT
+                            </div>
+
+                            <span class="confirmed-badge">
+                                <span></span>
+                                Confirmed
+                            </span>
+
+                        </div>
+
+
+                        <div class="doctor-appointment-info">
+
+                            <div class="doctor-large-avatar">
+                                RS
+                                <span class="online-dot"></span>
+                            </div>
+
+                            <div class="doctor-main-details">
+
+                                <h2>Dr. Rahul Sharma</h2>
+
+                                <p class="doctor-speciality">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                    Cardiologist
+                                </p>
+
+                                <p class="hospital-location">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Max Care Hospital, Tower B, Room 402
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="appointment-details-grid">
+
+                            <div class="appointment-detail">
+
+                                <span>DATE</span>
+
+                                <strong>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    15 September 2026
+                                </strong>
+
+                            </div>
+
+                            <div class="appointment-detail">
+
+                                <span>TIME</span>
+
+                                <strong>
+                                    <i class="fa-regular fa-clock"></i>
+                                    10:30 AM
+                                </strong>
+
+                            </div>
+
+                            <div class="appointment-detail">
+
+                                <span>TOKEN</span>
+
+                                <strong>
+                                    <i class="fa-solid fa-ticket"></i>
+                                    #14
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="appointment-actions">
+
+                            <button class="appointment-primary">
+                                View Details
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                            <button class="appointment-secondary">
+                                <i class="fa-solid fa-calendar-pen"></i>
+                                Reschedule
+                            </button>
+
+                            <button class="appointment-danger">
+                                Cancel
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK SERVICES -->
+                <div class="services-section">
+
+                    <div class="section-heading-row">
+
+                        <div>
+                            <span class="section-label">
+                                PATIENT SERVICES
+                            </span>
+
+                            <h2>How can we help?</h2>
+                        </div>
+
+                        <button class="view-all-btn">
+                            View all
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="services-grid">
+
+                        <!-- FIND SPECIALIST -->
+                        <button
+                            class="service-card specialist-card"
+                            data-action="book"
+                        >
+
+                            <div class="service-card-top">
+
+                                <div class="service-icon blue">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div>
+
+                                <span class="service-arrow">
+                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                </span>
+
+                            </div>
+
+                            <div class="service-content">
+
+                                <h3>Find a Specialist</h3>
+
+                                <p>
+                                    Browse 450+ specialists across
+                                    40+ departments.
+                                </p>
+
+                            </div>
+
+                        </button>
+
+
+                        <!-- MEDICAL RECORDS -->
+                        <button
+                            class="service-card"
+                            data-view="records"
+                        >
+
+                            <div class="service-card-top">
+
+                                <div class="service-icon purple">
+                                    <i class="fa-solid fa-file-medical"></i>
+                                </div>
+
+                                <span class="service-arrow">
+                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                </span>
+
+                            </div>
+
+                            <div class="service-content">
+
+                                <h3>Medical Records</h3>
+
+                                <p>
+                                    Securely access your reports,
+                                    lab results and documents.
+                                </p>
+
+                            </div>
+
+                        </button>
+
+
+                        <!-- PRESCRIPTIONS -->
+                        <button
+                            class="service-card"
+                            data-view="prescriptions"
+                        >
+
+                            <div class="service-card-top">
+
+                                <div class="service-icon green">
+                                    <i class="fa-solid fa-prescription-bottle-medical"></i>
+                                </div>
+
+                                <span class="service-arrow">
+                                    <i class="fa-solid fa-arrow-up-right"></i>
+                                </span>
+
+                            </div>
+
+                            <div class="service-content">
+
+                                <h3>Prescriptions</h3>
+
+                                <p>
+                                    View active medications and
+                                    prescription history.
+                                </p>
+
+                            </div>
+
+                        </button>
+
+
+                        <!-- EMERGENCY -->
+                        <button
+                            class="service-card emergency-card"
+                            data-action="emergency"
+                        >
+
+                            <div class="service-card-top">
+
+                                <div class="service-icon red">
+                                    <i class="fa-solid fa-truck-medical"></i>
+                                </div>
+
+                                <span class="service-arrow">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+
+                            </div>
+
+                            <div class="service-content">
+
+                                <div class="emergency-label">
+                                    <span></span>
+                                    24/7 EMERGENCY
+                                </div>
+
+                                <h3>Clinical Emergency</h3>
+
+                                <p>
+                                    Immediate medical assistance
+                                    and emergency hotline.
+                                </p>
+
+                                <strong class="emergency-number">
+                                    <i class="fa-solid fa-phone"></i>
+                                    +91 1800-123-9999
+                                </strong>
+
+                            </div>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTTOM DASHBOARD GRID -->
+                <div class="dashboard-bottom-grid">
+
+                    <!-- HEALTH SNAPSHOT -->
+                    <div class="dashboard-card health-card">
+
+                        <div class="card-heading">
+
+                            <div>
+                                <span class="section-label">
+                                    HEALTH SNAPSHOT
+                                </span>
+
+                                <h3>Recent Health Metrics</h3>
+                            </div>
+
+                            <button>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="health-metrics">
+
+                            <div class="metric">
+                                <div class="metric-icon">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                </div>
+
+                                <div>
+                                    <span>Heart Rate</span>
+                                    <strong>72 <small>BPM</small></strong>
+                                </div>
+                            </div>
+
+                            <div class="metric">
+                                <div class="metric-icon">
+                                    <i class="fa-solid fa-weight-scale"></i>
+                                </div>
+
+                                <div>
+                                    <span>Weight</span>
+                                    <strong>68 <small>KG</small></strong>
+                                </div>
+                            </div>
+
+                            <div class="metric">
+                                <div class="metric-icon">
+                                    <i class="fa-solid fa-droplet"></i>
+                                </div>
+
+                                <div>
+                                    <span>Blood Group</span>
+                                    <strong>B+ <small>POSITIVE</small></strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RECENT ACTIVITY -->
+                    <div class="dashboard-card activity-card">
+
+                        <div class="card-heading">
+
+                            <div>
+                                <span class="section-label">
+                                    RECENT ACTIVITY
+                                </span>
+
+                                <h3>Health Timeline</h3>
+                            </div>
+
+                            <button>
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-icon green">
+                                    <i class="fa-solid fa-file-medical"></i>
+                                </div>
+
+                                <div>
+                                    <strong>Blood Test Report Added</strong>
+                                    <span>Today · 09:42 AM</span>
+                                </div>
+
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-icon blue">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+
+                                <div>
+                                    <strong>Cardiology Appointment Confirmed</strong>
+                                    <span>Yesterday · 04:15 PM</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =============================================
+                 DOCTORS VIEW
+            ============================================== -->
+
+            <section
+                id="doctorsView"
+                class="page-view"
+            >
+
+                <div class="inner-page-header">
+
+                    <div>
+                        <span class="section-label">
+                            SPECIALIST NETWORK
+                        </span>
+
+                        <h1>Available Doctors</h1>
+
+                        <p>
+                            Find the right specialist for your healthcare needs.
+                        </p>
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        data-action="book"
+                    >
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        Book Appointment
+                    </button>
+
+                </div>
+
+
+                <div class="doctor-filter-bar">
+
+                    <div class="filter-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input
+                            type="text"
+                            placeholder="Search doctor..."
+                        >
+                    </div>
+
+                    <select>
+                        <option>All Specialties</option>
+                        <option>Cardiology</option>
+                        <option>Neurology</option>
+                        <option>Orthopedics</option>
+                        <option>Dermatology</option>
+                    </select>
+
+                    <select>
+                        <option>All Availability</option>
+                        <option>Available Today</option>
+                        <option>Available Tomorrow</option>
+                    </select>
+
+                </div>
+
+
+                <div class="doctors-grid">
+
+                    <article class="doctor-card">
+
+                        <div class="doctor-card-header">
+                            <div class="doctor-card-avatar">RS</div>
+
+                            <span class="available-badge">
+                                <span></span>
+                                Available
+                            </span>
+                        </div>
+
+                        <h3>Dr. Rahul Sharma</h3>
+
+                        <p>Cardiologist</p>
+
+                        <span class="experience">
+                            12 years experience
+                        </span>
+
+                        <div class="doctor-card-footer">
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                ₹800
+                            </span>
+
+                            <button data-action="book">
+                                Book
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="doctor-card">
+
+                        <div class="doctor-card-header">
+                            <div class="doctor-card-avatar purple-avatar">PN</div>
+
+                            <span class="available-badge">
+                                <span></span>
+                                Available
+                            </span>
+                        </div>
+
+                        <h3>Dr. Priya Nair</h3>
+
+                        <p>Neurologist</p>
+
+                        <span class="experience">
+                            15 years experience
+                        </span>
+
+                        <div class="doctor-card-footer">
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                ₹1000
+                            </span>
+
+                            <button data-action="book">
+                                Book
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="doctor-card">
+
+                        <div class="doctor-card-header">
+                            <div class="doctor-card-avatar orange-avatar">AK</div>
+
+                            <span class="available-badge">
+                                <span></span>
+                                Available
+                            </span>
+                        </div>
+
+                        <h3>Dr. Amit Kulkarni</h3>
+
+                        <p>Orthopedic Surgeon</p>
+
+                        <span class="experience">
+                            10 years experience
+                        </span>
+
+                        <div class="doctor-card-footer">
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                ₹750
+                            </span>
+
+                            <button data-action="book">
+                                Book
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                    </article>
+
+
+                    <article class="doctor-card">
+
+                        <div class="doctor-card-header">
+                            <div class="doctor-card-avatar pink-avatar">SM</div>
+
+                            <span class="available-badge">
+                                <span></span>
+                                Available
+                            </span>
+                        </div>
+
+                        <h3>Dr. Sneha Mehta</h3>
+
+                        <p>Dermatologist</p>
+
+                        <span class="experience">
+                            9 years experience
+                        </span>
+
+                        <div class="doctor-card-footer">
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                ₹700
+                            </span>
+
+                            <button data-action="book">
+                                Book
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =============================================
+                 HISTORY VIEW
+            ============================================== -->
+
+            <section
+                id="historyView"
+                class="page-view"
+            >
+
+                <div class="inner-page-header">
+
+                    <div>
+                        <span class="section-label">
+                            APPOINTMENTS
+                        </span>
+
+                        <h1>Appointment History</h1>
+
+                        <p>
+                            View and manage your previous appointments.
+                        </p>
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        data-action="book"
+                    >
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        New Appointment
+                    </button>
+
+                </div>
+
+
+                <div class="history-card">
+
+                    <div class="history-row history-heading">
+                        <span>DOCTOR</span>
+                        <span>SPECIALTY</span>
+                        <span>DATE</span>
+                        <span>STATUS</span>
+                        <span>ACTION</span>
+                    </div>
+
+                    <div class="history-row">
+
+                        <div class="history-doctor">
+                            <div class="mini-avatar">RS</div>
+                            <strong>Dr. Rahul Sharma</strong>
+                        </div>
+
+                        <span>Cardiology</span>
+                        <span>15 Sep 2026</span>
+
+                        <span class="status-pill confirmed">
+                            Confirmed
+                        </span>
+
+                        <button class="table-action">
+                            View
+                        </button>
+
+                    </div>
+
+                    <div class="history-row">
+
+                        <div class="history-doctor">
+                            <div class="mini-avatar purple-avatar">PN</div>
+                            <strong>Dr. Priya Nair</strong>
+                        </div>
+
+                        <span>Neurology</span>
+                        <span>02 Aug 2026</span>
+
+                        <span class="status-pill completed">
+                            Completed
+                        </span>
+
+                        <button class="table-action">
+                            View
+                        </button>
+
+                    </div>
+
+                    <div class="history-row">
+
+                        <div class="history-doctor">
+                            <div class="mini-avatar orange-avatar">AK</div>
+                            <strong>Dr. Amit Kulkarni</strong>
+                        </div>
+
+                        <span>Orthopedics</span>
+                        <span>18 Jul 2026</span>
+
+                        <span class="status-pill completed">
+                            Completed
+                        </span>
+
+                        <button class="table-action">
+                            View
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =============================================
+                 RECORDS VIEW
+            ============================================== -->
+
+            <section
+                id="recordsView"
+                class="page-view"
+            >
+
+                <div class="inner-page-header">
+
+                    <div>
+                        <span class="section-label">
+                            HEALTH DOCUMENTS
+                        </span>
+
+                        <h1>Prescriptions & Records</h1>
+
+                        <p>
+                            Your medical reports, prescriptions and health documents.
+                        </p>
+                    </div>
+
+                    <button class="secondary-header-btn">
+                        <i class="fa-solid fa-download"></i>
+                        Download All
+                    </button>
+
+                </div>
+
+
+                <div class="records-grid">
+
+                    <article class="record-card">
+
+                        <div class="record-icon blue">
+                            <i class="fa-solid fa-file-waveform"></i>
+                        </div>
+
+                        <div class="record-content">
+                            <span>LAB REPORT</span>
+                            <h3>Complete Blood Count</h3>
+                            <p>12 September 2026 · PDF</p>
+                        </div>
+
+                        <button>
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+
+                    </article>
+
+
+                    <article class="record-card">
+
+                        <div class="record-icon green">
+                            <i class="fa-solid fa-prescription-bottle-medical"></i>
+                        </div>
+
+                        <div class="record-content">
+                            <span>PRESCRIPTION</span>
+                            <h3>Cardiology Prescription</h3>
+                            <p>05 September 2026 · PDF</p>
+                        </div>
+
+                        <button>
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+
+                    </article>
+
+
+                    <article class="record-card">
+
+                        <div class="record-icon purple">
+                            <i class="fa-solid fa-file-medical"></i>
+                        </div>
+
+                        <div class="record-content">
+                            <span>MEDICAL REPORT</span>
+                            <h3>Annual Health Checkup</h3>
+                            <p>22 August 2026 · PDF</p>
+                        </div>
+
+                        <button>
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =============================================
+                 PRESCRIPTIONS VIEW
+            ============================================== -->
+
+            <section
+                id="prescriptionsView"
+                class="page-view"
+            >
+
+                <div class="inner-page-header">
+
+                    <div>
+                        <span class="section-label">
+                            MEDICATIONS
+                        </span>
+
+                        <h1>Prescriptions</h1>
+
+                        <p>
+                            Keep track of your active and previous medications.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="prescription-card">
+
+                    <div class="prescription-header">
+
+                        <div class="prescription-doctor">
+
+                            <div class="mini-avatar">
+                                RS
+                            </div>
+
+                            <div>
+                                <strong>Dr. Rahul Sharma</strong>
+                                <span>Cardiology · 05 Sep 2026</span>
+                            </div>
+
+                        </div>
+
+                        <span class="status-pill active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="medicine-list">
+
+                        <div class="medicine">
+
+                            <div class="medicine-icon">
+                                <i class="fa-solid fa-capsules"></i>
+                            </div>
+
+                            <div>
+                                <strong>Cardiopril 5mg</strong>
+                                <span>1 tablet · Once daily after breakfast</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="medicine">
+
+                            <div class="medicine-icon">
+                                <i class="fa-solid fa-pills"></i>
+                            </div>
+
+                            <div>
+                                <strong>Atorvastatin 10mg</strong>
+                                <span>1 tablet · Once daily at night</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================================================
+     BOOK APPOINTMENT MODAL
+========================================================= -->
+
+<div
+    class="modal-overlay"
+    id="appointmentModal"
+    aria-hidden="true"
+>
+
+    <div
+        class="appointment-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="appointmentModalTitle"
+    >
+
+        <!-- MODAL HEADER -->
+        <div class="modal-header">
+
+            <div>
+
+                <span class="modal-eyebrow">
+                    HOSPITAL CLINICAL SCHEDULING
+                </span>
+
+                <h2 id="appointmentModalTitle">
+                    Book Your Specialist Appointment
+                </h2>
+
+                <p>
+                    Select your preferred specialist, consultation type,
+                    date and available time slot.
+                </p>
+
+            </div>
+
+            <button
+                class="modal-close"
+                id="closeModal"
+                aria-label="Close appointment modal"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <!-- MODAL BODY -->
+        <div class="modal-body">
+
+            <!-- DOCTOR SELECTION -->
+            <section class="booking-section">
+
+                <div class="booking-section-heading">
+
+                    <div>
+                        <span>01</span>
+                        <div>
+                            <small>SELECT SPECIALIST</small>
+                            <h3>Your preferred doctor</h3>
+                        </div>
+                    </div>
+
+                    <span class="required-label">
+                        REQUIRED
+                    </span>
+
+                </div>
+
+
+                <div class="selected-doctor-card">
+
+                    <div class="selected-doctor-avatar">
+                        RS
+                        <span></span>
+                    </div>
+
+                    <div class="selected-doctor-info">
+
+                        <div class="doctor-name-row">
+                            <h3 id="selectedDoctorName">
+                                Dr. Rahul Sharma
+                            </h3>
+
+                            <span class="doctor-verified">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Verified
+                            </span>
+                        </div>
+
+                        <p id="selectedDoctorSpecialty">
+                            Cardiologist
+                        </p>
+
+                        <div class="doctor-meta">
+
+                            <span>
+                                <i class="fa-solid fa-briefcase"></i>
+                                <strong id="selectedDoctorExperience">12</strong>
+                                yrs experience
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-door-open"></i>
+                                Room <strong id="selectedDoctorRoom">402</strong>
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                                Fee <strong id="selectedDoctorFee">₹800</strong>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="doctor-available">
+                        <span></span>
+                        Available
+                    </div>
+
+                </div>
+
+
+                <!-- DOCTOR SWITCHER -->
+                <div class="doctor-switcher">
+
+                    <button
+                        class="doctor-switch active"
+                        data-doctor="rahul"
+                    >
+                        Rahul
+                        <small>Card.</small>
+                    </button>
+
+                    <button
+                        class="doctor-switch"
+                        data-doctor="priya"
+                    >
+                        Priya
+                        <small>Neur.</small>
+                    </button>
+
+                    <button
+                        class="doctor-switch"
+                        data-doctor="amit"
+                    >
+                        Amit
+                        <small>Orth.</small>
+                    </button>
+
+                    <button
+                        class="doctor-switch"
+                        data-doctor="sneha"
+                    >
+                        Sneha
+                        <small>Derm.</small>
+                    </button>
+
+                    <button class="doctor-switch-more">
+                        + 446 specialists
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONSULTATION TYPE -->
+            <section class="booking-section">
+
+                <div class="booking-section-heading">
+
+                    <div>
+                        <span>02</span>
+
+                        <div>
+                            <small>CONSULTATION TYPE</small>
+                            <h3>How would you like to consult?</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="consultation-options">
+
+                    <button
+                        class="consultation-card active"
+                        data-consultation="inperson"
+                    >
+
+                        <div class="consultation-radio">
+                            <span></span>
+                        </div>
+
+                        <div class="consultation-icon blue">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+
+                        <div class="consultation-info">
+
+                            <strong>
+                                In-Person Consultation
+                            </strong>
+
+                            <span>
+                                Hospital OPD Room
+                            </span>
+
+                        </div>
+
+                        <i class="fa-solid fa-circle-check selected-check"></i>
+
+                    </button>
+
+
+                    <button
+                        class="consultation-card"
+                        data-consultation="video"
+                    >
+
+                        <div class="consultation-radio">
+                            <span></span>
+                        </div>
+
+                        <div class="consultation-icon purple">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+
+                        <div class="consultation-info">
+
+                            <strong>
+                                Video Teleconsultation
+                            </strong>
+
+                            <span>
+                                Secure online consultation
+                            </span>
+
+                        </div>
+
+                        <i class="fa-solid fa-circle-check selected-check"></i>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- DATE SELECTION -->
+            <section class="booking-section">
+
+                <div class="booking-section-heading">
+
+                    <div>
+                        <span>03</span>
+
+                        <div>
+                            <small>CONSULTATION DATE</small>
+                            <h3>Select a preferred date</h3>
+                        </div>
+
+                    </div>
+
+                    <span class="date-month">
+                        SEPTEMBER 2026
+                    </span>
+
+                </div>
+
+
+                <div class="date-scroller">
+
+                    <button
+                        class="date-card"
+                        data-date="12"
+                        data-status="available"
+                    >
+                        <span>Today</span>
+                        <strong>12</strong>
+                        <small>Sat</small>
+                        <em>Available</em>
+                    </button>
+
+
+                    <button
+                        class="date-card disabled"
+                        data-date="13"
+                        disabled
+                    >
+                        <span>Sun</span>
+                        <strong>13</strong>
+                        <small>Sep</small>
+                        <em>No OPD</em>
+                    </button>
+
+
+                    <button
+                        class="date-card"
+                        data-date="14"
+                    >
+                        <span>Mon</span>
+                        <strong>14</strong>
+                        <small>Sep</small>
+                        <em>Available</em>
+                    </button>
+
+
+                    <button
+                        class="date-card active"
+                        data-date="15"
+                    >
+                        <span>Tue</span>
+                        <strong>15</strong>
+                        <small>Sep</small>
+                        <em>Available</em>
+                    </button>
+
+
+                    <button
+                        class="date-card"
+                        data-date="16"
+                    >
+                        <span>Wed</span>
+                        <strong>16</strong>
+                        <small>Sep</small>
+                        <em>Available</em>
+                    </button>
+
+
+                    <button
+                        class="date-card"
+                        data-date="17"
+                    >
+                        <span>Thu</span>
+                        <strong>17</strong>
+                        <small>Sep</small>
+                        <em>Available</em>
+                    </button>
+
+
+                    <button
+                        class="date-card"
+                        data-date="18"
+                    >
+                        <span>Fri</span>
+                        <strong>18</strong>
+                        <small>Sep</small>
+                        <em>Available</em>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- TIME SLOTS -->
+            <section class="booking-section time-section">
+
+                <div class="booking-section-heading">
+
+                    <div>
+                        <span>04</span>
+
+                        <div>
+                            <small>AVAILABLE TIME SLOTS</small>
+                            <h3>Choose your appointment time</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="slot-legend">
+
+                        <span>
+                            <i class="available-dot"></i>
+                            Available
+                        </span>
+
+                        <span>
+                            <i class="selected-dot"></i>
+                            Selected
+                        </span>
+
+                        <span>
+                            <i class="booked-dot"></i>
+                            Booked
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MORNING -->
+                <div class="slot-group">
+
+                    <div class="slot-group-title">
+                        <i class="fa-regular fa-sun"></i>
+                        MORNING SESSIONS
+                        <span>09:00 AM – 12:00 PM</span>
+                    </div>
+
+                    <div class="time-slots">
+
+                        <button class="time-slot">
+                            09:00 AM
+                        </button>
+
+                        <button class="time-slot">
+                            09:30 AM
+                        </button>
+
+                        <button class="time-slot booked" disabled>
+                            10:00 AM
+                        </button>
+
+                        <button class="time-slot active">
+                            <span>10:30 AM</span>
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+
+                        <button class="time-slot">
+                            11:00 AM
+                        </button>
+
+                        <button class="time-slot booked" disabled>
+                            11:30 AM
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AFTERNOON -->
+                <div class="slot-group">
+
+                    <div class="slot-group-title">
+                        <i class="fa-regular fa-clock"></i>
+                        AFTERNOON & EVENING SESSIONS
+                        <span>12:00 PM – 06:00 PM</span>
+                    </div>
+
+                    <div class="time-slots">
+
+                        <button class="time-slot">
+                            12:30 PM
+                        </button>
+
+                        <button class="time-slot">
+                            01:00 PM
+                        </button>
+
+                        <button class="time-slot booked" disabled>
+                            01:30 PM
+                        </button>
+
+                        <button class="time-slot">
+                            02:00 PM
+                        </button>
+
+                        <button class="time-slot">
+                            04:00 PM
+                        </button>
+
+                        <button class="time-slot">
+                            04:30 PM
+                        </button>
+
+                        <button class="time-slot">
+                            05:00 PM
+                        </button>
+
+                        <button class="time-slot">
+                            05:30 PM
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- MODAL FOOTER -->
+        <div class="modal-footer">
+
+            <div class="booking-summary">
+
+                <div class="summary-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <div>
+                    <span>SELECTED APPOINTMENT</span>
+
+                    <strong id="bookingSummary">
+                        Dr. Rahul Sharma · Tue, 15 Sep · 10:30 AM
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer-actions">
+
+                <button
+                    class="modal-cancel-btn"
+                    id="modalCancel"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    class="primary-btn confirm-booking-btn"
+                    id="confirmBooking"
+                >
+                    Confirm Appointment
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     TOAST NOTIFICATION
+========================================================= -->
+
+<div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+>
+
+    <div class="toast-icon">
+        <i class="fa-solid fa-check"></i>
+    </div>
+
+    <div class="toast-content">
+        <strong id="toastTitle">Success</strong>
+        <span id="toastMessage">
+            Action completed successfully.
+        </span>
+    </div>
+
+    <button id="toastClose">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+</div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
